@@ -1,0 +1,48 @@
+<div class="col-md-2 wrapper wrapper-content ">
+    <div class="outside">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content col-md-10">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet light bordered">
+                <div class="portlet-title table-line">
+                    <div class="caption font-blue-hoki">
+                        <i class="fa fa-group font-blue-hoki">
+
+                        </i>
+                        <span class="caption-subject bold uppercase">表格</span>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="portlet-body">
+                        <div class="tab-content">
+                            <p class="text-danger">
+                            the first datatable instance ID is:<strong>{{dtInstance1.id}}</strong>
+                        </p>
+                            <table datatable="" dt-options="dtOptions1" dt-columns="dtColumns1" dt-instance="dtInstance1" class="table table-bordered table-hover">
+
+                            </table>
+                            <p class="text-danger">
+                                the second datatable instance ID is:<strong>{{dtInstance2.id}}</strong>
+                            </p>
+                            <p>
+                                <pre>{{selected|json}}</pre>
+                            </p>
+                            <table datatable="" dt-options="dtOptions2" dt-columns="dtColumns2" dt-instance="dtInstanceCallback" class="table table-bordered table-hover">
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .outside{
+        border: 1px solid #e7ecf1;
+    }
+</style>
+

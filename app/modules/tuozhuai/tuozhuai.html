@@ -1,0 +1,42 @@
+<div class="drag-box drag-box-1">
+    <div class="drag drag-1"><img src="modules/tuozhuai/1.jpg"> </div>
+    <div class="drag drag-1"><img src="modules/tuozhuai/2.jpg"> </div>
+</div>
+<style>
+    .drag-box{
+        width: 50%;
+        height: 350px;
+        background-color:#3bb3e0;
+        margin:0 auto 50px;
+        border: 1px solid #2561b4;
+    }
+    img{
+        display:block;
+        width: 100%;
+        height: auto;
+    }
+    .drag{
+        width:150px;
+        height: 150px;
+    }
+    /*.drag.drag-1{*/
+        /*width: 150px;*/
+        /*height: 150px;*/
+        /*top:100px*/
+    /*}*/
+    .drag.on{
+        z-index:9
+    }
+</style>
+<script>
+    $(function () {
+        $('.drag-box-1 .drag').each(function(index) {
+            $(this).myDrag({
+              randomPosition:true,
+                direcition:'all',
+                handler:false
+            });
+        })
+    })
+
+</script>

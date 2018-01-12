@@ -1,0 +1,60 @@
+<div class="wrapper">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption font-blue-hoki">
+                        <i class="fa fa-group font-blue-hoki">
+
+                        </i>
+                        <span class="caption-subject bold uppercase">QAQ</span>
+                    </div>
+                    <div class="pull-right">
+                        <ul class="nav nav-tabs" style="border: none">
+                            <li class="active">
+                                <a class="bold" showtab href="#tab0" data-toggle="tab">table</a>
+                            </li>
+                            <li >
+                                <a class="bold" showtab href="#tab1" data-toggle="tab">configuration</a>
+                            </li>
+                            <li >
+                                <a class="bold" showtab href="#tab2" data-toggle="tab">with ajax</a>
+                            </li>
+                            <li >
+                                <a class="bold" showtab href="#tab3" data-toggle="tab">angular</a>
+                            </li>
+                            <li >
+                                <a class="bold" showtab href="#tab4" data-toggle="tab">two tables</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--<div class="actions pull-right">-->
+
+                    <!--<button class="btn btn-circle btn-icon-only btn-default fullscreen"></button>-->
+                    <!--</div>-->
+                </div>
+                <div class="portlet-body">
+                    <div class="row" style="margin-bottom: 10px">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab0">
+                                <div ui-view="tab0"></div>
+                            </div>
+                            <div class="tab-pane" id="tab1">
+                                <div ui-view="tab1"></div>
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <div ui-view="tab2"></div>
+                            </div>
+                            <div class="tab-pane" id="tab3">
+                                <div ui-view="tab3"></div>
+                            </div>
+                            <div class="tab-pane" id="tab4">
+                                <div ui-view="tab4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

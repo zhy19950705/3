@@ -1,0 +1,65 @@
+<div class="wrapper wrapper-content ">
+    <div class="portlet light bordered">
+        <div class="portlet-title">
+        <div class="actions" style="float:right">
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" id="beginTime" data-toggle="dropdown" href="javascript:;" data-close-others="true">
+                            <div class="input-group">
+                                <input type="text" placeholder="开始时间" name="beginTime" class="form-control input-sm" style="width: 260px" data-ng-model="beginTime">
+                                <span class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </span>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                            <datetimepicker data-ng-model="beginTime" data-datetimepicker-config="{dropdownSelector:'#beginTime',modelType:'YYYY-MM-DD HH:mm:ss',minView:'minute',renderOn:'end-date-changed'}"
+                                            data-on-set-time="startDateOnSetTime()" data-before-render="startDateBeforeRender($dates)"></datetimepicker>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" id="endTime" data-toggle="dropdown" href="javascript:;" data-close-others="true">
+                            <div class="input-group">
+                                <input type="text" placeholder="开始时间" name="endTime" class="form-control input-sm" style="width: 260px" data-ng-model="endTime">
+                                <span class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </span>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                            <datetimepicker data-ng-model="endTime" data-datetimepicker-config="{dropdownSelector:'#endTime',modelType:'YYYY-MM-DD HH:mm:ss',minView:'minute',renderOn:'start-date-changed'}"
+                                            data-on-set-time="endDateOnSetTime()" data-before-render="endDateBeforeRender($view,$dates,$leftDate,$upDate,$rightDate)"></datetimepicker>
+                        </ul>
+                    </div>
+                </div>
+                <button class="btn btn-sm green-sharp" ng-click="search()">查询</button>
+            </form>
+        </div>
+        <!--<div class="dropdown timedropdown pull-left">-->
+            <!--<a class="dropdown-toggle" id="enddropdown" role="button" data-toggle="dropdown" data-target=".timedropdown" href="#">-->
+                <!--<div class="input-group">-->
+                    <!--<input type="text" id="endTime" name="endDate" class="date form-control spinner input-circle input-time" placeholder="结束时间" readonly data-ng-model="endTime">-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<ul class="dropdown-menu  datetimepicker-left " role="menu" aria-labelledby="dLabel">-->
+                <!--<datetimepicker data-ng-model="endTime" data-datetimepicker-config="{ dropdownSelector:'#enddropdown' ,modelType:'YYYY-MM-DD HH:mm:ss' }"></datetimepicker>-->
+            <!--</ul>-->
+        <!--</div>-->
+        </div>
+        <div class="portlet-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pull-right">
+                        <select class="form-control input-sm" ng-options="month for month in monthData" ng-model="monthDateTime" ng-chage="monthDateFunc(monthDateTime)"></select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div id="chart1" style="height:260px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

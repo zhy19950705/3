@@ -1,0 +1,61 @@
+<div class="page-sidebar">
+    <ul id="accordion" class="accordion">
+        <li>
+            <div class="link"><i class="fa fa-paint-brush"></i>说散就散<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li><a ui-sref="hcharts">hcharts</a></li>
+                <li><a ui-sref="echarts">echarts</a> </li>
+                <li><a ui-sref="analysis">图表分析</a></li>
+                <li><a ui-sref="zuoye">作业</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="fa fa-code"></i>体面<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li><a ui-sref="table">tables</a> </li>
+                <li><a ui-sref="table2">table2</a> </li>
+                <li><a ui-sref="chaxun">查询</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="fa fa-mobile"></i>恰鸡小分队<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li><a ui-sref="chiji">QvQboom</a> </li>
+                <li><a ui-sref="html5">html5</a> </li>
+            </ul>
+        </li>
+        <li><div class="link"><i class="fa fa-globe"></i>OvO<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                 <li><a ui-sref="tuozhuai">德玛西亚</a> </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<script>
+    $(function() {
+        var Accordion = function(el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+
+            // Variables privadas
+            var links = this.el.find('.link');
+            // Evento
+            links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+        }
+
+        Accordion.prototype.dropdown = function(e) {
+            var $el = e.data.el;
+            $this = $(this),
+                $next = $this.next();
+
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
+
+            if (!e.data.multiple) {
+                $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+            };
+        }
+
+        var accordion = new Accordion($('#accordion'), false);
+    });
+</script>

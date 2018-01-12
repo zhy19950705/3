@@ -1,0 +1,27 @@
+<div>
+    <div data-ng-include="'modules/main/views/pageTop.html'" ></div>
+    <div class="clearfix">
+
+    </div>
+    <div class="page-container">
+        <div data-ng-include="'modules/main/views/sideBar.html'" data-ng-controller="sidebarController" class="">
+
+        </div>
+        <div class="page-content-wrapper">
+            <div class="page-content" style="min-height: 651px">
+                <div class="fade-in-up">
+                    <div class="page-bar">
+                        <ul class="page-breadcrumb">
+                            <li>
+                                <i class="fa fa-home"></i>
+                                <a ng-href="/" ng-bind="">QAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div ui-view></div>
+            </div>
+        </div>
+    </div>
+    <div data-ng-include="'modules/main/views/pageFooter.html'"  class="page-footer"></div>
+</div>

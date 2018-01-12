@@ -1,0 +1,54 @@
+<div>
+    <h3>SGML、HTML、XML和XHTML之间的关系</h3>
+    <p>SGML（标准通用标记语言）是一种指定文档标记的标准，是一种描述了文档标记应该如何的元语言。</p>
+    <p>HTML是描述使用SGML的标记语言</p>
+    <p>通过SGML，每一个HTML页面都需要在相同的地方创建并附加一个DTD（文档类型定义）节点。所以，你总是可以在HTML页面的顶部发现DTD用于解析目的的“DOCTYPE”属性。</p>
+    <pre>< !--!doctype-- ></pre>
+    <p>由于解析SGML是一种痛苦，所以创建了XML。 XML使用SGML。例如，在SGML，你必须拥有成对的开始和结束标签，但在XML中，你可以使用自动关闭的标签。</p>
+    <p>XHTML源自于使用HTML 4.0的XML。你可以参考XML DTD如以下所示的代码片段。</p>
+    <pre class="">
+        <span>< !--!doctype-- >< !--!doctype-- ></span>
+    </pre>
+
+
+    <input list="Country">
+    <datalist id="Country">
+        <option value="India"></option>
+        <option value="Italy"></option>
+        <option value="Iran"></option>
+        <option value="Israel"></option>
+        <option value="Indonesia"></option>
+    </datalist>
+
+    <input type="color" name="favcolor">
+
+    <input type="date" name="bday">
+
+    <input type="datetime-local" name="bdaytime">
+
+    <input type="email" name="email">
+
+    <input type="url" name="sitename">
+
+    <input type="number" name="quantity" min="1.0" max="5.0">
+
+    <div class="dd">
+        <input type="range" min="0" max="10" step="2" value="6">
+    </div>
+
+    <div class="dd">
+        <input type="search" name="googleengine">
+    </div>
+
+    <div class="dd">
+        <input type="time" name="usr_time">
+    </div>
+
+    <input type="tel" name="mytel">
+</div>
+<style>
+    .dd{
+        width: 200px;
+        margin: 10px;
+    }
+</style>

@@ -1,0 +1,56 @@
+<div class="wrapper">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption font-blue-hoki">
+                        <i class="fa fa-group font-blue-hoki">
+
+                        </i>
+                        <span class="caption-subject bold uppercase">数据展示</span>
+                    </div>
+                    <div class="pull-right">
+                        <ul class="nav nav-tabs" style="border: none">
+                            <li class="active">
+                                <a class="bold" showtab href="#tab1" data-toggle="tab">各市GDP总览</a>
+                            </li>
+                            <li>
+                                <a class="bold" showtab href="#tab2" data-toggle="tab">按地区展示</a>
+                            </li>
+                            <li>
+                                <a class="bold" showtab href="#tab3" data-toggle="tab">2016累计GDP</a>
+                            </li>
+                            <li>
+                                <a class="bold" showtab href="#tab4" data-toggle="tab">固定资产投资</a>
+                            </li>
+                            <li>
+                                <a class="bold" showtab href="#tab5" data-toggle="tab">部分市房地产投资</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="row" style="margin-bottom: 10px">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <div ui-view="tab1"></div>
+                            </div>
+                            <div class="tab-pane " id="tab2">
+                                <div ui-view="tab2"></div>
+                            </div>
+                            <div class="tab-pane " id="tab3">
+                                <div ui-view="tab3"></div>
+                            </div>
+                            <div class="tab-pane " id="tab4">
+                                <div ui-view="tab4"></div>
+                            </div>
+                            <div class="tab-pane " id="tab5">
+                                <div ui-view="tab5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="wrapper wrapper-content animated fadeInRight" >
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption font-blue-hoki">
+                        <i class="fa fa-group font-blue-hoki">
+
+                        </i>
+                        <span class="caption-subject bold uppercase">QAQ</span>
+                    </div>
+                    <div class="pull-right">
+                        <div class="actions pull-right">
+                            <div class="dropdown timedropdown  pull-left">
+                                <a class="dropdown-toggle" id="startdropdown" role="button" data-toggle="dropdown"  href="javascript:;">
+                                    <div class="input-group">
+                                        <input type="text" id="startTime" name="startTime" class="date form-control spinner input-circle input-time" placeholder="开始时间" readonly data-ng-model="startTime">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                    <datetimepicker data-ng-model="startTime" data-datetimepicker-config="{ dropdownSelector: '#startdropdown',modelType:'YYYY-MM-DD HH:mm:ss' }"></datetimepicker>
+                                </ul>
+                            </div>
+                            <div class="dropdown timedropdown pull-left">
+                                <a class="dropdown-toggle" id="enddropdown" role="button" data-toggle="dropdown"  href="javascript:;">
+                                    <div class="input-group">
+                                        <input type="text" id="endTime" name="endDate" class="date form-control spinner input-circle input-time" placeholder="结束时间" readonly data-ng-model="endTime">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu  datetimepicker-left " role="menu" aria-labelledby="dLabel">
+                                    <datetimepicker data-ng-model="endTime" data-datetimepicker-config="{ dropdownSelector: '#enddropdown' ,modelType:'YYYY-MM-DD HH:mm:ss' }"></datetimepicker>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-cirle green-sharp btn-sm ladda-button" data-style="slide-right" ng-click="queryData()">
+                                <i class="fa fa-search">查询</i>
+                            </button>
+                            <button class="btn btn-circle btn-icon-only btn-default fullscreen"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-body clearfix" >
+                     <div class="col-md-12">
+                         <div class="tab-content">
+                             <table datatable="" dt-options="dtOptions" dt-columns="dtColumns" dt-instance="dtInstance" class="table table-bordered table-hover"></table>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

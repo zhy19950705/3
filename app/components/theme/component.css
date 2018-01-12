@@ -1,0 +1,341 @@
+
+.btn{
+    outline:none !important;/*去除外边框*/
+    box-shadow: none !important;
+}
+.table .btn {
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.btn-circle{
+    border-radius: 12px !important;
+    overflow: hidden;
+
+}
+.table.btn:hover {
+    background-color: #00a7ff;
+}
+.btn-circle:active {
+    background-color: #bddc8d;
+    border-radius: 12px !important;
+}
+
+
+.portlet.light.bordered {
+    border: 1px solid #e7ecf1 !important;
+}
+
+.portlet.light {
+    background-color: #fff;
+    padding: 12px 20px 60px 20px;
+}
+
+.portlet {
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.portlet.light.bordered > .portlet-title {
+    border-bottom: 1px solid #eef1f5;
+}
+
+.portlet.light > .portlet-title {
+    min-height: 48px;
+    padding: 0;
+}
+.portlet.light.bordered > .portlet-title {
+    border-bottom: 1px solid #eef1f5;
+}
+
+.portlet>.portlet-title{
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 10px;
+}
+
+.portlet.light > .portlet-title > .caption {
+    color: #666;
+    padding: 10px 0;
+}
+
+.portlet > .portlet-title > .caption {
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px 0;
+}
+
+
+.font-blue-hoki {
+    color: #67809F !important;
+}
+
+.portlet.light > .portlet-title > .caption > .caption-subject {
+    font-size: 16px;
+}
+
+.portlet.light > .portlet-title > .actions {
+    padding: 6px 0 14px 0;
+}
+
+.portlet > .portlet-title > .actions {
+    display: inline-block;
+    float: right;
+    padding: 6px 0;
+}
+
+/*全屏图标*/
+.portlet > .portlet-title > .actions .btn-icon-only.btn-default.fullscreen {
+    color: #a0a0a0;
+    padding-top: 3px;
+    font-family: FontAwesome;
+}
+
+.portlet > .portlet-title > .actions .btn-icon-only.btn-default.fullscreen.btn-sm {
+    height: 27px;
+    padding: 3px 3px !important;
+    width: 27px;
+}
+
+.portlet > .portlet-title > .actions .btn-icon-only.btn-default.fullscreen:before { content: "\f065"; }
+
+.portlet > .portlet-title > .actions .btn-icon-only.btn-default.fullscreen.on:before { content: "\f066"; }
+
+
+.portlet.light > .portlet-title > .actions .btn-icon-only {
+    height: 27px;
+    width: 27px;
+}
+
+.portlet > .portlet-title > .actions .btn-icon-only.btn-default {
+    padding: 4px 6px 2px 6px;
+}
+
+.btn-icon-only {
+    height: 34px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 34px;
+}
+
+
+.portlet.light .portlet-body {
+    padding-top: 8px;
+}
+
+.add-circle{
+    margin-bottom: 10px;
+    height:40px;
+    border-bottom: 1px solid #eef1f5;
+    padding-bottom: 10px;
+}
+
+.btn.green-sharp:not(.btn-outline) {
+    background-color: #2ab4c0;
+    border-color: #2ab4c0;
+    color: #FFFFFF;
+}
+
+.btn.green-sharp:hover{
+    background-color: #00a7ff;
+}
+
+.fa{
+    padding-right: 6px;
+}
+/*头部*/
+.head-title{
+    font-size:20px;
+    font-weight:600;
+    color:#67809F;
+}
+
+.outside{
+    border: 1px solid #e7ecf1;
+}
+/*搜索框*/
+.pagin-padding{
+    padding:10px;
+}
+
+.search{
+    background-color: #f1f4f7;
+}
+
+.form-control-input {
+    outline: none;
+    width: 99%;
+    border-radius: 15px !important;
+    line-height: 23px;
+    border: 1px solid #f3f3f3;
+}
+
+.form-control-input[placeholder] {
+    padding-left: 12px;
+}
+
+.pagin {
+    list-style-type: none;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+.pagin > li {
+    display: inline-block;
+}
+/*列表*/
+.nav-List {
+    border-bottom: 1px solid #e7ecf1;
+}
+
+.nav-List-width {
+    width: 100%;
+}
+
+.nav-List-text {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.nav-List:hover {
+    color: #218d96;
+}
+
+.classList {
+    color: #218d96;
+}
+/*箭头*/
+.dot-left {
+    font-size: 0;
+    line-height: 0;
+    border-width: 6px;
+    border-color: #8f9ea6;
+    border-left-width: 0;
+    border-style: dashed;
+    border-right-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.dot-right {
+    font-size: 0;
+    line-height: 0;
+    border-width: 6px;
+    border-color: #8f9ea6;
+    border-right-width: 0;
+    border-style: dashed;
+    border-left-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+/*隐藏部分*/
+.expander-title {
+    border-bottom: 1px solid #e7ecf1;
+}
+
+.expander-title > p {
+    font-weight: 600;
+    /*font-size: 13px;*/
+}
+
+.expander-text {
+    font-weight: 600;
+}
+
+.expander-btn {
+
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    border-collapse: separate;
+}
+
+.expander-btn-left {
+    border-radius: 10px 0 0 10px !important;
+}
+
+.expander-btn-right {
+    border-radius: 0 10px 10px 0 !important;
+}
+
+/*底部*/
+
+.page-list-width {
+    display: table;
+    margin: 0 auto 0 auto !important;
+    padding: 0;
+}
+
+.globe {
+    margin: 2px 6px;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    background-color: #8f9ea6 !important;
+}
+
+.globeSpan {
+    padding: 0 !important;
+}
+
+.globeSpan {
+    color: #8f9ea6 !important;
+}
+
+.pagin > .active {
+    background-color: #36c6d3 !important;
+}
+
+.pagin > .active {
+    color: #36c6d3 !important;
+}
+
+/***
+Bootstrap  Datetimepicker
+***/
+
+.datetimepicker table td {
+    color: #000;
+    font-family: 'Open Sans' !important;
+    font-weight: 300 !important;
+}
+
+.datetimepicker table th {
+    font-family: 'Open Sans' !important;
+    font-weight: 400 !important;
+}
+
+.datetimepicker.dropdown-menu { padding: 5px; }
+
+.datetimepicker .active {
+    background-color: #4b8df8 !important;
+    background-image: none !important;
+    filter: none !important;
+}
+
+.datetimepicker .active:hover {
+    background-color: #2678FC !important;
+    background-image: none !important;
+    filter: none !important;
+}
+
+.datetimepicker .fa-angle-left:before { content: ""/*rtl:""*/; }
+
+.datetimepicker .fa-angle-right:before { content: ""/*rtl:""*/; }
+
+/* change z-index when opened in modal */
+
+.modal-open .datetimepicker { z-index: 10055; }
+
+/***
+
+

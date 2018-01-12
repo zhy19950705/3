@@ -1,0 +1,39 @@
+<div class="col-md-2 wrapper wrapper-content ">
+    <div class="outside">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content col-md-10">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet light bordered">
+                <div class="portlet-title table-line">
+                    <div class="caption font-blue-hoki">
+                        <i class="fa fa-group font-blue-hoki">
+
+                        </i>
+                        <span class="caption-subject bold uppercase">表格</span>
+                        <button class="btn btn-primary" ng-click="dtInstance.rerender()">刷新</button>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="portlet-body">
+                        <div class="tab-content">
+                            <p class="text-danger"><strong>{{message}}</strong></p>
+                            <p class="text-danger">you clicked on:<strong>{{message2}}</strong></p>
+                             <table datatable="" dt-options="dtOptions" dt-columns="dtColumns" dt-instance="dtInstance" class="table table-bordered table-hover">
+
+                             </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .outside{
+        border: 1px solid #e7ecf1;
+    }
+</style>
+

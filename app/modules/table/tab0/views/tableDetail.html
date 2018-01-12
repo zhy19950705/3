@@ -1,0 +1,75 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <div class="caption font-green-sharp">
+            <i class="font-green-sharp fa" ng-class="{add:'fa-plus',edit:'fa-pencil'}[pageType]"></i>
+            <span class="caption-subject bold uppercase" ng-bind="pageType==='add'?'添加':'修改'"></span>
+            <button type="button" class="close" ng-click="close()"></button>
+        </div>
+    </div>
+    <div class="portlet-body">
+        <form class="form-horizontal" ng-class="{danger:cartsDetail}" name="cartsDetailForm" novalidate>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <label class="col-md-3 control-label" for="title">枪械名称</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="name" placeholder="请输入名称" ng-model="cartsDetail.name" ng-maxlength="10" required/>
+                            <div ng-if="cartsDetailForm.name.$dirty&&cartsDetailForm.name.$invalid" class="error">
+                                <span ng-if="cartsDetailForm.name.$error.required">此项为必填项</span>
+                                <span ng-if="cartsDetailForm.name.$error.maxlength" class="error">最大长度为10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label class="col-md-3 control-label" for="title">枪械类型</label>
+                        <div class="col-md-9">
+                            <select class="form-control" ng-model="cartsDetail.firearmtype" name="firearmtype" ng-options="firearmtype.value as firearmtype.type for firearmtype in fireArmTypes ">
+                                <option value="">-----请选择枪械类型----</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label class="col-md-3 control-label" for="title">弹药类型</label>
+                        <div class="col-md-9">
+                              <input type="text" class="form-control" name="typeofbullet" placeholder="请输入弹药类型" ng-model="cartsDetail.typeofbullet" required>
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label class="col-md-3 control-label" for="title">弹匣数量</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="capacity" placeholder="请输入数量" ng-model="cartsDetail.capacity" required>
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label class="col-md-3 control-label" for="title">可添加附件</label>
+                        <div class="col-md-9">
+                            <div style="width: 80%;display: inline-block">
+                                <input type="text" class="form-control" name="attachment" placeholder="请输入" ng-model="cartsDetail.attachment">
+                            </div>
+                            <div class="" style="display: inline-block;width: 18%;position: absolute;top: 5px;right: 0">
+                                <a class="btn btn-circle btn-icon-only green" style="width: 25px;height: 25px;padding: 2px" ng-click="addState()">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label class="col-md-3 control-label" for="title">是否必须</label>
+                        <div class="mt-radio-inline">
+                            <label class="mt-radio mt-radio-outline">
+                                <input type="radio" name="state" ng-model="cartsDetail.state" value="1" required>是<span></span>
+                            </label>
+                            <label class="mt-radio mt-radio-outline">
+                                <input type="radio" name="state" ng-model="cartsDetail.state" value="0" required>否<span></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <detail-bottom-close ng-click="close()"></detail-bottom-close>
+                <detail-bottom-save ng-click="save(cartsDetail)" ng-disabled="cartsDetailForm.$invalid"></detail-bottom-save>
+            </div>
+        </form>
+    </div>
+</div>

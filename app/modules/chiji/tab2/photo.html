@@ -1,0 +1,12 @@
+<div class="container">
+    <div style="text-align: center;clear:both"></div>
+    <ul id="grid" class="group">
+        <li ng-repeat="photo in photos">
+            <div class="details">
+                <h3>{{photo.name}}</h3>
+                <a class="more" ng-href="{{photo.href}}">view details</a>
+            </div>
+            <a class="more" ng-click="edit(param)"><img ng-src="{{photo.src}}"/></a>
+        </li>
+    </ul>
+</div>
