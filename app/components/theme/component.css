@@ -93,21 +93,21 @@
 }
 
 /*全屏图标*/
-.portlet > .portlet-title > .actions .btn-icon-only.btn-default.fullscreen {
+.fullscreen {
     color: #a0a0a0;
     padding-top: 3px;
     font-family: FontAwesome;
 }
 
-.portlet > .portlet-title > .actions .btn-icon-only.btn-default.fullscreen.btn-sm {
+.fullscreen.btn-sm {
     height: 27px;
     padding: 3px 3px !important;
     width: 27px;
 }
 
-.portlet > .portlet-title > .actions .btn-icon-only.btn-default.fullscreen:before { content: "\f065"; }
+.fullscreen:before { content: "\f065"; }
 
-.portlet > .portlet-title > .actions .btn-icon-only.btn-default.fullscreen.on:before { content: "\f066"; }
+.fullscreen.on:before { content: "\f066"; }
 
 
 .portlet.light > .portlet-title > .actions .btn-icon-only {
@@ -338,4 +338,156 @@ Bootstrap  Datetimepicker
 
 /***
 
+/***
+Dropdown Menu
+***/
 
+/*rtl:ignore*/
+
+.dropdown-menu { box-shadow: 5px 5px rgba(102, 102, 102, 0.1); }
+
+.dropdown-menu {
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    display: none;
+    float: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    left: 0/*rtl:auto*/;
+    list-style: none;
+    margin: 10px 0px 0px 0px;
+    min-width: 175px;
+    padding: 0px;
+    position: absolute;
+    text-shadow: none;
+    z-index: 1000;
+}
+
+.dropdown-menu li.divider { background: #f1f3f6; }
+
+.dropdown-menu li.header { padding: 8px 14px 2px 14px; }
+
+.dropdown-menu > li > a {
+    clear: both;
+    color: #6f6f6f;
+    display: block;
+    font-weight: 300;
+    line-height: 18px;
+    padding: 8px 16px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu > li > a > [class^="fa-"],
+.dropdown-menu > li > a > [class*=" fa-"] { color: #888; }
+
+.dropdown-menu > li > a > [class^="icon-"],
+.dropdown-menu > li > a > [class*=" icon-"] { color: #666; }
+
+.dropdown-menu > li > a > [class^="glyphicon-"],
+.dropdown-menu > li > a > [class*=" glyphicon-"] { color: #888; }
+
+.dropdown-menu > li:hover > a, .dropdown-menu > li.active > a, .dropdown-menu > li.active:hover > a {
+    background-color: #f6f6f6;
+    background-image: none;
+    color: #555;
+    filter: none;
+    text-decoration: none;
+}
+
+.dropdown-menu.bottom-up {
+    bottom: 100%;
+    margin-bottom: 2px;
+    top: auto;
+}
+
+.dropdown-menu.bottom-up:before, .dropdown-menu.bottom-up:after { display: none; }
+
+.dropdown-menu > li:first-child:hover > a { border-radius: 4px 4px 0px 0px; }
+
+.dropdown-menu > li:last-child:hover > a { border-radius: 0px 0px 4px 4px; }
+
+.dropdown-hover:hover > .dropdown-menu { display: block; }
+
+.dropdown > .dropdown-menu,
+.dropdown-toggle > .dropdown-menu,
+.btn-group > .dropdown-menu { margin-top: 10px; }
+
+.dropdown > .dropdown-menu:before,
+.dropdown-toggle > .dropdown-menu:before,
+.btn-group > .dropdown-menu:before {
+    border-bottom: 8px solid #e0e0e0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    content: '';
+    display: inline-block !important;
+    left: 9px;
+    position: absolute;
+    right: auto;
+    top: -8px;
+}
+
+.dropdown > .dropdown-menu:after,
+.dropdown-toggle > .dropdown-menu:after,
+.btn-group > .dropdown-menu:after {
+    border-bottom: 7px solid #fff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    content: '';
+    display: inline-block !important;
+    left: 10px;
+    position: absolute;
+    right: auto;
+    top: -7px;
+}
+
+.dropdown > .dropdown-menu.pull-left:before,
+.dropdown-toggle > .dropdown-menu.pull-left:before,
+.btn-group > .dropdown-menu.pull-left:before {
+    left: auto;
+    right: 9px;
+}
+
+.dropdown > .dropdown-menu.pull-left:after,
+.dropdown-toggle > .dropdown-menu.pull-left:after,
+.btn-group > .dropdown-menu.pull-left:after {
+    left: auto;
+    right: 10px;
+}
+
+.dropdown > .dropdown-menu.pull-right:before,
+.dropdown-toggle > .dropdown-menu.pull-right:before,
+.btn-group > .dropdown-menu.pull-right:before {
+    left: auto;
+    right: 9px;
+}
+
+.dropdown > .dropdown-menu.pull-right:after,
+.dropdown-toggle > .dropdown-menu.pull-right:after,
+.btn-group > .dropdown-menu.pull-right:after {
+    left: auto;
+    right: 10px;
+}
+
+.dropdown.dropup > .dropdown-menu,
+.dropdown-toggle.dropup > .dropdown-menu,
+.btn-group.dropup > .dropdown-menu {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.dropdown.dropup > .dropdown-menu:after, .dropdown.dropup > .dropdown-menu:before,
+.dropdown-toggle.dropup > .dropdown-menu:after,
+.dropdown-toggle.dropup > .dropdown-menu:before,
+.btn-group.dropup > .dropdown-menu:after,
+.btn-group.dropup > .dropdown-menu:before { display: none !important; }
+
+.dropdown-toggle:after { display: none; }
+
+.datetimepicker {
+    width: 400px!important;
+}

@@ -1,5 +1,5 @@
 angular.module('myApp').controller('zuoye5',['$scope',function ($scope) {
-    //各地区投保率趋势分布图
+
     option = {
         title: [{
             text: '2004-2006浙江省部分市房地产投资',
