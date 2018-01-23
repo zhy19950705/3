@@ -7,7 +7,7 @@ angular.module('myApp').controller('tableCtrl',['$scope','datatableHelpService',
     $scope.searchParam="";
 
     $scope.paginationConf={
-        currentPage:1,
+        currentPage:2,
         itemsPerpage:10
     }
 
